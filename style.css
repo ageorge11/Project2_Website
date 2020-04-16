@@ -1,0 +1,39 @@
+img {
+ border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+  width: 150px;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.services, .vision, .members, h1, a,.header, .footer{
+    color: whitesmoke;
+}
+
+.header, .footer{
+    margin: 20px;
+    background-color: black;
+}
+
+.flex-container {    
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    justify-content: center;    
+    background-color: gray;
+    background-image: url('images/flex_cntnr.jpg');
+    
+  }
+
+.flex-container > div {
+    background-color: od;
+    margin: 10px;
+    padding: 20px;  
+    font-size: 25px;
+}
+
+
+
