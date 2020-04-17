@@ -5,6 +5,8 @@ img {
   width: 150px;
 }
 
+
+/*This style is for the index.html*/
 h1 {
     text-shadow: 2px 2px 4px #000000;
 }
@@ -34,6 +36,57 @@ h1 {
     padding: 20px;  
     font-size: 25px;
 }
+/*style for index.html ends here*/
 
+/*style for members.html*/
+ 
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .responsive {
+      text-align: center;
+    padding: 0 20px;
+    float: left;
+    width: 24.99999%;
+    color: black;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 
