@@ -1,0 +1,50 @@
+header {
+    margin: 20px;
+    background-color: black;
+    text-align: center;
+    position: sticky;
+    top:0px;
+}
+
+footer{
+  margin: 20px;
+  text-align: center;
+  background-color: black;
+  color : white;
+}
+
+img {
+    border: 1px solid #ddd;
+     border-radius: 50%;
+     padding: 5px;
+     width: 150px;
+   }
+
+.image {
+    border: 1px solid #ccc;
+  }
+  
+.image:hover {
+    border: 1px solid #777;
+  }
+  
+.image img {
+    height: auto;
+  }
+
+.details {
+    padding: 15px;
+    text-align: center;
+  }  
+  
+.member {
+      text-align: center;
+    padding: 0 20px;
+    float: left;
+    width: 24.99999%;
+    color: black;
+}
+  
+.main {
+  min-height: calc(100vh - 211px - 58px);
+}
