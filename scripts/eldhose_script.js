@@ -35,3 +35,80 @@ function addImage(imageArray) {
     });
 }
 
+//To clear all the images
+function clearImages() {
+    var main = document.getElementById("images");
+    while (main.firstChild) {
+        main.removeChild(main.firstChild);
+    }
+}
+
+function resize(element) {
+    var img = element.parentNode.previousSibling;
+    var imgSize = element.innerHTML;
+
+    if (imgSize == " Medium ") {
+        element.innerHTML = " Large "
+        img.style.width = "60%";
+    }
+    else if (imgSize == " Large ") {
+        element.innerHTML = " Small "
+        img.style.width = "80%";
+    }
+    else if (imgSize == " Small ") {
+        element.innerHTML = " Medium "
+        img.style.width = "40%";
+    }
+}
+
+function toTop(element) {
+    var img = element.parentNode.previousSibling.getAttribute("src");
+    var imgIndex = imageList.indexOf(img);
+
+    imageList.splice(imgIndex, 1);
+    imageList.unshift(img);
+
+    clearImages();
+    addImage(imageList);
+}
+
+function toBottom(element) {
+    var img = element.parentNode.previousSibling.getAttribute("src");
+    var imgIndex = imageList.indexOf(img);
+
+    imageList.splice(imgIndex, 1);
+    imageList.push(img);
+
+    clearImages();
+    addImage(imageList);
+}
+
+function toLeft(element) {
+    var img = element.parentNode.previousSibling.getAttribute("src");
+    var imgIndex = imageList.indexOf(img);
+
+    if (imgIndex > 0) {
+        swap(imageList, imgIndex, imgIndex - 1)
+    }
+
+    clearImages();
+    addImage(imageList);
+}
+
+function toRight(element) {
+    var img = element.parentNode.previousSibling.getAttribute("src");
+    var imgIndex = imageList.indexOf(img);
+
+    if (imgIndex < imageList.length - 1) {
+        swap(imageList, imgIndex, imgIndex + 1)
+    }
+
+    clearImages();
+    addImage(imageList);
+}
+
+function swap(array, fromIndex, toIndex) {
+    var temp = array[fromIndex];
+    array[fromIndex] = imageList[toIndex];
+    array[toIndex] = temp;
+}
