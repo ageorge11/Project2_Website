@@ -72,3 +72,8 @@ img {
     border-color: rgb(96, 240, 127);
     color: rgb(96, 240, 127);
 }
+
+.content {
+    color: white;
+    text-align: center;
+}
