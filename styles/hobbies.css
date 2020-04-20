@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(43, 42, 42);
+}
+
+.label {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 92px;
+    padding: 80px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    color: #fafafa;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #e1f3ae56, 
+      7px 7px 0px rgba(241, 220, 220, 0.2);
+}
